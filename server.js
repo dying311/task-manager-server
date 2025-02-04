@@ -7,7 +7,7 @@ const app = express();
 
 // 配置 CORS
 app.use(cors({
-  origin: 'http://localhost:3001',  // 允许前端访问的地址
+  origin:  ['http://localhost:3001', 'https://task-manager-client-blond.vercel.app'],  // 允许前端访问的地址
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],  // 允许请求头
   credentials: true
